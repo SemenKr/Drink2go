@@ -1,0 +1,8 @@
+.image-content {
+	display: block;
+	object-fit: contain;
+
+	&--cover {
+		object-fit: cover;
+	}
+}

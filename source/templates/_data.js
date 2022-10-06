@@ -19,17 +19,10 @@ export default {
 		"mobile": null
 	},
 	"images": {
-		"map": {
+		"product1": {
 			"ext": "png",
-			"width": 320,
-			"height": 454,
-			"maxdppx": 2,
-			"viewports": ["desktop", "tablet", "mobile"]
-		},
-		"test": {
-			"ext": "png",
-			"width": 320,
-			"height": 320,
+			"width": 280,
+			"height": 280,
 			"maxdppx": 2,
 			"viewports": ["desktop", "tablet", "mobile"]
 		}

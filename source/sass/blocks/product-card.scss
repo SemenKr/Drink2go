@@ -1,0 +1,28 @@
+.product-card {
+	min-width: 280px;
+
+	&--product-1 {
+		background-color: #f3ebe1;
+	}
+
+	&--product-2 {
+		background-color: #eae6fc;
+	}
+
+	&--product-3 {
+		background-color: #e5e6e8;
+	}
+}
+
+.product-card__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-card__content {
+	order: 2;
+}
+
+.product-card__image {
+	order: 1;
+}

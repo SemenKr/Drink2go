@@ -1,9 +1,15 @@
 .page {
 	height: 100%;
 	font-family: var(--main-font);
-	font-size: 15px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 20px;
 	color: var(--text-color);
+	min-width: 280px;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 32px;
+	}
 }
 
 

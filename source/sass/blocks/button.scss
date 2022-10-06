@@ -1,0 +1,33 @@
+.button {
+	padding: 8px 20px;
+	border-radius: 4px;
+	color: var(--base-color);
+	background-color: var(--accent-color, #7859cf);
+	transition: all 200ms ease-in;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: none;
+
+	&:hover {
+		background-color: var(--focus-color);
+		transition: all 200ms ease-in;
+		color: var(--base-color);
+	}
+
+	&:active {
+		background-color: var(--active-color);
+		transition: all 200ms ease-in;
+		color: var(--base-color);
+	}
+
+	&:disabled {
+		background-color: var(--disabled-color);
+		transition: all 200ms ease-in;
+		color: var(--base-color);
+	}
+
+	&--reset {
+		color: var(--accent-color);
+		background-color: var(--base-color);
+	}
+}
