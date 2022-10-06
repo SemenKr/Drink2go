@@ -28,5 +28,9 @@
 	],
 
 	"svg.preview.boundingBox": true,
-	"svg.preview.transparencyGrid": true
+	"svg.preview.transparencyGrid": true,
+	"cSpell.words": [
+		"Однокласниках",
+		"Пинтерест"
+	]
 }
