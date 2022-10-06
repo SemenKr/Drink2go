@@ -3,45 +3,80 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-  <main class="main-container">
-    <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
-    <section class="main-slider">
-      <h2 class="main-slider__title">Слайдер</h2>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="product-card">
-              <h3 class="product-card__title">Декаф Флэт Уайт</h3>
-              <img class="product-card__image" src="#" alt="">
-              <p class="product-card__description"></p>
-              <span class="product-card__old-price"></span>
-              <span class="product-card__price"></span>
-              <button class="product-card__button"></button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <h3 class="product-card__title">Декаф Флэт Уайт</h3>
-              <img class="product-card__image" src="#" alt="">
-              <p class="product-card__description"></p>
-              <span class="product-card__old-price"></span>
-              <span class="product-card__price"></span>
-              <button class="product-card__button"></button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <h3 class="product-card__title">Декаф Флэт Уайт</h3>
-              <img class="product-card__image" src="#" alt="">
-              <p class="product-card__description"></p>
-              <span class="product-card__old-price"></span>
-              <span class="product-card__price"></span>
-              <button class="product-card__button"></button>
-            </div>
-          </div>
-        </div>
+	<main class="main-container">
+		<h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
+		<section class="main-slider">
+			<h2 class="main-slider__title">Слайдер</h2>
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="product-card">
+							<h3 class="product-card__title">Декаф Флэт Уайт</h3>
+							<img class="product-card__image" src="#" alt="">
+							<p class="product-card__description"></p>
+							<span class="product-card__old-price"></span>
+							<span class="product-card__price"></span>
+							<button class="product-card__button"></button>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="product-card">
+							<h3 class="product-card__title">Декаф Флэт Уайт</h3>
+							<img class="product-card__image" src="#" alt="">
+							<p class="product-card__description"></p>
+							<span class="product-card__old-price"></span>
+							<span class="product-card__price"></span>
+							<button class="product-card__button"></button>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="product-card">
+							<h3 class="product-card__title">Декаф Флэт Уайт</h3>
+							<img class="product-card__image" src="#" alt="">
+							<p class="product-card__description"></p>
+							<span class="product-card__old-price"></span>
+							<span class="product-card__price"></span>
+							<button class="product-card__button"></button>
+						</div>
+					</div>
+				</div>
 
-      </div>
-    </section>
-  </main>
-  {% endblock %}
+			</div>
+		</section>
+		<section class="features">
+			<h2 class="features__title">Преимущества</h2>
+			<dl class="features__list">
+				<dt class="features__term">Скорость</dt>
+				<dd class="features__description">Готовый напиток всегда под рукой — просто открой банку</dd>
+				<dt class="features__term">Удобство</dt>
+				<dd class="features__description">Легко помещается и в карман,
+					и в маленькую сумочку</dd>
+				<dt class="features__term">Бодрость</dt>
+				<dd class="features__description">Сбалансированная доза кофеина даст мощный заряд энергии</dd>
+				<dt class="features__term">Экологичность</dt>
+				<dd class="features__description">Вся упаковка сделана
+					из перерабатываемых материалов</dd>
+			</dl>
+		</section>
+		<section class="catalog">
+			<h2>Каталог</h2>
+			<form action="#">
+				{# <fieldset>
+					<legend>Цена</legend>
+					<input type="range" min="0" max="900" value="800" class="slider" id="myRange">
+					<div>
+						<label for=""><input type="number"></label>
+						<label for=""><input type="number"></label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Наличие молока</legend>
+					<label for=""><input type="radio" name="milk" value="Неважно">Неважно</label>
+					<label for=""><input type="radio" name="milk" value="Только животное">Только животное</label>
+					<label for=""><input type="radio" name="milk" value="Только растительное">Только растительное</label>
+					<label for=""><input type="radio" name="milk" value="Без молока" disabled>Без молока</label>
+				</fieldset> #}
+			</form>
+		</section>
+	</main>
+	{% endblock %}
