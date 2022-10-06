@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: local("Montserrat"),
+		url("/source/fonts/montserrat.woff") format("woff"),;
+}
+
+@font-face {
+	font-family: "Montserrat Bold";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: local("Montserrat"),
+		url("/source/fonts/montserrat-bold.woff") format("woff"),;
+}
+
+:root {
+	--main-font: "Montserrat", sans-serif;
+}

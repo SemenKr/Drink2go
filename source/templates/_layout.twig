@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Drink2go | HTML Academy</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="/source/fonts/montserrat-bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/source/fonts/montserrat.woff" as="font" type="font/woff" crossorigin>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicons/32.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body class="page__body">
+	{% include "./header.twig" %}
+
+	{% block main %}{% endblock %}
+
+	{% include "./footer.twig" %}
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
