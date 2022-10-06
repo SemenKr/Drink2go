@@ -1,4 +1,4 @@
-<header class="main-header page__centerer">
+<header class="main-header main-header--nojs page__centerer">
 	<a class="main-header__logo">
 		<picture>
 			<source media="(min-width: 1440px)" srcset="icons/stack.svg#logo-desktop">
@@ -6,12 +6,9 @@
 			<img src="icons/stack.svg#logo" width="36" height="36" alt="Логотип Мишки.">
 		</picture>
 	</a>
-	<button class="main-header__toggle" type="button">
-		<span class="visually-hidden">Открыть меню</span>
-	</button>
-	<span>Интернет-магазин кофейных напитков</span>
+	<span class="main-header__description">Интернет-магазин кофейных напитков</span>
 	<nav class="main-nav main-header__nav">
-		<ul class="main-nav__list site-list">
+		<ul class="main-nav__list site-list list">
 			<li class="site-list__item">
 				<a class="site-list__link" href="#">Главная</a>
 			</li>
@@ -27,15 +24,16 @@
 		</ul>
 	</nav>
 	<nav class="main-header__user user-nav">
-		<ul class="user-nav__list user-list">
-			<li class="user-list__item">
-				<a class="user-list__link user-list__link--icon_user" href="#">Войти</a>
+		<ul class="user-nav__list list">
+			<li class="user-nav__item">
+				<a class="user-nav__link user-nav__link--icon_user" href="#"><span>Войти</span></a>
 			</li>
-			<li class="user-list__item">
-				<a class="user-list__link user-list__link--icon_basket" href="#">Корзина</a>
+			<li class="user-nav__item">
+				<a class="user-nav__link user-nav__link--icon_basket" href="#"><span>Корзина</span></a>
 			</li>
 		</ul>
-		<button></button>
-		<button></button>
 	</nav>
+	<button class="main-header__toggle" type="button">
+		<span class="visually-hidden">Открыть меню</span>
+	</button>
 </header>
