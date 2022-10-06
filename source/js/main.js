@@ -1,21 +1,17 @@
 const swiper = new Swiper('.swiper', {
 	slidesPerView: 1,
-  spaceBetween: 10,
+	spaceBetween: 10,
 
+	pagination: {
+		el: '.swiper-pagination',
+	},
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+	scrollbar: {
+		el: '.swiper-scrollbar',
+	},
 });
