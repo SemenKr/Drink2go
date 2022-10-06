@@ -1,0 +1,21 @@
+.page {
+	height: 100%;
+	font-family: var(--main-font);
+	font-size: 15px;
+	line-height: 24px;
+	color: var(--text-color);
+}
+
+
+.page__centerer {
+	margin: 0 30px;
+
+	@media #{$not-mobile} {
+		margin: 0 50px;
+	}
+
+	@media #{$desktop-only} {
+		width: 1440px;
+		margin: 0 auto;
+	}
+}
