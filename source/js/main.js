@@ -27,6 +27,7 @@ if (navMain.classList.contains('main-header--menu_closed')) {
 navMain.classList.remove('main-header--menu_closed');
 navMain.classList.add('main-header--menu_opened');
 } else {
+navMain.classList.add('main-header--menu_closed');
 navMain.classList.remove('main-header--menu_opened');
 }
 });

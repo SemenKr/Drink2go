@@ -14,10 +14,10 @@
 
 
 .page__centerer {
-	margin: 0 30px;
+	margin: 0 18px;
 
 	@media #{$not-mobile} {
-		margin: 0 50px;
+		margin: 0 20px;
 	}
 
 	@media #{$desktop-only} {

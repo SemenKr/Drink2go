@@ -15,7 +15,7 @@ export default {
 	],
 	"viewports": {
 		"desktop": 1440,
-		"tablet": 768,
+		"tablet": 760,
 		"mobile": null
 	},
 	"images": {
