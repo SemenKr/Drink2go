@@ -85,6 +85,10 @@
 	margin: 0;
 	margin-bottom: 20px;
 	text-align: center;
+
+	@media #{$desktop-only} {
+		text-align: start;
+	}
 }
 
 .product-card__order-container {

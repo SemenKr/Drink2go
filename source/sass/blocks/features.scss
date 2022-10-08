@@ -1,4 +1,148 @@
+/* stylelint-disable CssSyntaxError */
 .features {
-	padding-top: 50px;
-	padding-bottom: 60px;
+	padding: 50px 10px 60px;
+
+	@media #{$not-mobile} {
+		padding: 60px 0 100px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 100px 0 96px;
+	}
+}
+
+.features__title {
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+.features__title-list {
+	text-align: center;
+	margin-bottom: 36px;
+}
+
+.features__list {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+		row-gap: 50px;
+		column-gap: 30px;
+	}
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		row-gap: 50px;
+		column-gap: 30px;
+	}
+}
+
+.features__item {
+	margin-bottom: 34px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		margin-bottom: 0;
+		align-items: flex-start;
+	}
+
+	@media #{$desktop-only} {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&--speed {
+		&::before {
+			content: "";
+			display: block;
+			min-width: 56px;
+			height: 56px;
+			margin-bottom: 10px;
+			background: url("../../icons/stack.svg#feature-speed") no-repeat;
+		}
+	}
+
+	&--comfort {
+		&::before {
+			content: "";
+			display: block;
+			min-width: 56px;
+			height: 56px;
+			margin-bottom: 10px;
+			background: url("../../icons/stack.svg#feature-comfort") no-repeat;
+		}
+	}
+
+	&--energy {
+		&::before {
+			content: "";
+			display: block;
+			min-width: 56px;
+			height: 56px;
+			margin-bottom: 10px;
+			background: url("../../icons/stack.svg#feature-energy") no-repeat;
+		}
+	}
+
+
+	&--ecology {
+		&::before {
+			content: "";
+			display: block;
+			min-width: 56px;
+			height: 56px;
+			margin-bottom: 10px;
+			background: url("../../icons/stack.svg#feature-ecology") no-repeat;
+		}
+	}
+}
+
+.features__content {
+	@media #{$not-mobile} {
+		margin-left: 20px;
+	}
+
+	@media #{$desktop-only} {
+		margin-left: 0;
+	}
+}
+
+.features__term {
+	margin-bottom: 4px;
+	text-align: center;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		text-align: start;
+	}
+
+	@media #{$desktop-only} {
+		text-align: center;
+	}
+}
+
+
+.features__description {
+	margin: 0;
+	text-align: center;
+
+	@media #{$not-mobile} {
+		text-align: start;
+	}
+
+	@media #{$desktop-only} {
+		text-align: center;
+	}
 }
