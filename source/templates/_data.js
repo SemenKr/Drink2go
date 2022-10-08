@@ -25,6 +25,20 @@ export default {
 			"height": 280,
 			"maxdppx": 2,
 			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"product2": {
+			"ext": "png",
+			"width": 280,
+			"height": 280,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"product3": {
+			"ext": "png",
+			"width": 280,
+			"height": 280,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
 		}
 	}
 }

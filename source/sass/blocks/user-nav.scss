@@ -3,31 +3,45 @@
 	list-style-type: none;
 }
 
+.user-nav__item {
+	box-sizing: border-box;
+}
+
 
 .user-nav__link {
-	width: 60px;
-	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 16px;
+	color: var(--text-color);
+	padding: 20px;
+	box-sizing: border-box;
 
 	&--icon_user {
 		--icon: url("../../icons/stack.svg#user");
 		background-repeat: no-repeat;
 		background-position: center;
 
+		span {
+			display: none;
+
+			@media #{$desktop-only} {
+				display: block;
+				margin-left: 8px;
+			}
+		}
+
 		@media #{$mobile-only} {
 			min-width: 50px;
-
-			span {
-				display: none;
-			}
 		}
 
 		&::before {
 			content: "";
 			display: block;
-			width: 16px;
+			min-width: 16px;
 			height: 16px;
 			background: #000000;
 			mask: var(--icon);
@@ -39,18 +53,23 @@
 		background-repeat: no-repeat;
 		background-position: center;
 
+		span {
+			display: none;
+
+			@media #{$desktop-only} {
+				display: block;
+				margin-left: 8px;
+			}
+		}
+
 		@media #{$mobile-only} {
 			min-width: 50px;
-
-			span {
-				display: none;
-			}
 		}
 
 		&::before {
 			content: "";
 			display: block;
-			width: 16px;
+			min-width: 16px;
 			height: 16px;
 			background: #000000;
 			mask: var(--icon);

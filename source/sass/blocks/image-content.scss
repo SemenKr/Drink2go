@@ -5,4 +5,15 @@
 	&--cover {
 		object-fit: cover;
 	}
+
+	@media #{$not-mobile} {
+		width: 476px;
+		height: 476px;
+	}
+
+
+	@media #{$desktop-only} {
+		width: 600px;
+		height: 600px;
+	}
 }

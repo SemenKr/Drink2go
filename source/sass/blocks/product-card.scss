@@ -1,5 +1,29 @@
 .product-card {
 	min-width: 280px;
+	padding: 20px 10px 60px;
+	position: relative;
+
+	@media #{$tablet-only} {
+		padding: 60px 60px 0;
+
+		&::after {
+			content: "";
+			height: 188px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: var(--base-color);
+			background-position: bottom;
+			display: block;
+			position: absolute;
+			z-index: 0;
+		}
+	}
+
+	@media #{$desktop-only} {
+		padding: 30px 105px 84px;
+	}
+
 
 	&--product-1 {
 		background-color: #f3ebe1;
@@ -14,15 +38,106 @@
 	}
 }
 
+.product-card__content {
+	display: flex;
+	flex-direction: column;
+	order: 2;
+
+	@media #{$not-mobile} {
+		order: 0;
+	}
+
+	@media #{$desktop-only} {
+		order: 2;
+		align-items: flex-start;
+		padding: 30px;
+		max-width: 655px;
+	}
+}
+
+.product-card__title {
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+	font-size: 36px;
+	line-height: 1.33;
+	margin-bottom: 10px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 16px;
+		font-size: 56px;
+		line-height: 1.43;
+	}
+}
+
+.product-card__bait {
+	order: -1;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: var(--accent-color);
+	font-size: 12px;
+	line-height: 1.33;
+	margin-bottom: 4px;
+}
+
+.product-card__description {
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.product-card__order-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media #{$not-mobile} {
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+}
+
+.product-card__old-price {
+	font-size: 16px;
+	line-height: 2;
+	color: var(--accent-color);
+}
+
+.product-card__price {
+	font-size: 20px;
+	line-height: 1.6;
+	font-weight: 600;
+	margin-left: 6px;
+}
+
+.product-card__button {
+	margin-left: 40px;
+
+	@media #{$not-mobile} {
+		margin-left: 20px;
+	}
+}
+
 .product-card__wrapper {
 	display: flex;
 	flex-direction: column;
-}
 
-.product-card__content {
-	order: 2;
+	@media #{$desktop-only} {
+		flex-direction: row;
+		align-items: center;
+	}
 }
 
 .product-card__image {
 	order: 1;
+	margin: 0 auto 10px;
+
+	@media #{$not-mobile} {
+		z-index: 1;
+	}
+
+	@media #{$desktop-only} {
+		margin: 0;
+	}
 }

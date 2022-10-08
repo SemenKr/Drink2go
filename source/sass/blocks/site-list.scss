@@ -9,7 +9,7 @@
 
 .site-list__item {
 	text-align: center;
-	padding: 20px;
+	padding: 20px 0;
 	background-color: var(--base-color);
 	border-bottom: 1px solid #f0ebff;
 
@@ -23,6 +23,7 @@
 
 	@media #{$not-mobile} {
 		border: none;
+		min-width: 82px;
 	}
 }
 
