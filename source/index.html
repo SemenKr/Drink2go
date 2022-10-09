@@ -126,44 +126,79 @@
 		<div class="catalog__container page__centerer">
 			<h2 class="catalog__title title title--accent">Каталог</h2>
 			<form class="catalog__form form" action="https://echo.htmlacademy.ru" method="post">
-				<fieldset class="form__field">
-					<legend class="form__title title title--form">Цена</legend>
-					<input type="range" min="0" max="900" value="800" class="slider" id="myRange">
-					<div>
-						<input type="number">
-						<input type="number">
-					</div>
-				</fieldset>
-				<fieldset class="form__field">
-					<legend class="form__title title title--form">Наличие молока</legend>
-					<ul class="list">
-						<li><label for="no_matter"><input type="radio" name="milk" value="no_matter" id="no_matter">Неважно</label></li>
-						<li><label for="animal"><input type="radio" name="milk" value="animal" id="animal">Только животное</label></li>
-						<li><label for="vegetable"><input type="radio" name="milk" value="vegetable" id="vegetable">Только растительное</label></li>
-						<li><label for="milk-free"><input type="radio" name="milk" value="milk-free" id="milk-free" disabled>Без молока</label></li>
-					</ul>
-				</fieldset>
-				<fieldset class="form__field">
-					<legend class="form__title title title--form">Страна произрастания</legend>
-					<ul class="list">
-						<li class="">
-							<label for="brasil"><input type="checkbox" id="brasil" value="brasil" checked>Бразилия</label>
-						</li>
-						<li class="">
-							<label for="ethiopic"><input type="checkbox" id="ethiopic" value="ethiopic">Эфиопия</label>
-						</li>
-						<li class="">
-							<label for="colombia"><input type="checkbox" id="colombia" value="colombia">Колумбия</label>
-						</li>
-						<li class="">
-							<label for="costa-rica"><input type="checkbox" id="costa-rica" value="costa-rica">Коста-Рика</label>
-						</li>
-						<li class="">
-							<label for="peru"><input type="checkbox" id="peru" value="peru" disabled>Перу</label>
-						</li>
-					</ul>
-				</fieldset>
-				<div class="">
+				<div class="form__fieldsets-wrapper">
+					<fieldset class="form__fieldset">
+						<legend class="form__title title title--form">Цена</legend>
+						<input type="range" min="0" max="900" value="800" class="slider" id="myRange">
+						<div>
+							<input type="number">
+							<input type="number">
+						</div>
+					</fieldset>
+					<fieldset class="form__fieldset">
+						<legend class="form__title title title--form">Наличие молока</legend>
+						<ul class="form__list list">
+							<li class="form__item">
+								<label class="form__field check check--radio" for="no_matter">
+									<input class="check__control check__control--kind_checkable check__control--type_radio" type="radio" name="milk" value="no_matter" id="no_matter" checked>
+									Неважно
+								</label>
+								</li>
+							<li class="form__item">
+								<label class="form__field check check--radio" for="animal">
+									<input class="check__control check__control--kind_checkable check__control--type_radio" type="radio" name="milk" value="animal" id="animal">
+									Только животное
+								</label>
+								</li>
+							<li class="form__item">
+								<label class="form__field check check--radio" for="vegetable">
+									<input class="check__control check__control--kind_checkable check__control--type_radio" type="radio" name="milk" value="vegetable" id="vegetable">
+									Только растительное
+								</label>
+							</li>
+							<li class="form__item">
+								<label class="form__field check check--radio" for="milk-free">
+									<input class="check__control check__control--kind_checkable check__control--type_radio" type="radio" name="milk" value="milk-free" id="milk-free" disabled>
+									Без молока</label>
+								</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form__fieldset">
+						<legend class="form__title title title--form">Страна произрастания</legend>
+						<ul class="list">
+							<li class="form__item">
+								<label class="form__field check check--box" for="brasil">
+									<input class="check__control check__control--box_checkable check__control--type_checkbox"  type="checkbox" id="brasil" value="brasil" checked>
+									Бразилия
+								</label>
+							</li>
+							<li class="form__item">
+								<label class="form__field check check--box" for="ethiopic">
+									<input class="check__control check__control--box_checkable check__control--type_checkbox" type="checkbox" id="ethiopic" value="ethiopic">
+									Эфиопия
+								</label>
+							</li>
+							<li class="form__item">
+								<label class="form__field check check--box" for="colombia">
+									<input class="check__control check__control--box_checkable check__control--type_checkbox" type="checkbox" id="colombia" value="colombia">
+									Колумбия
+								</label>
+							</li>
+							<li class="form__item">
+								<label class="form__field check check--box" for="costa-rica">
+									<input class="check__control check__control--box_checkable check__control--type_checkbox"  type="checkbox" id="costa-rica" value="costa-rica">
+									Коста-Рика
+								</label>
+							</li>
+							<li class="form__item">
+								<label class="form__field check check--box" for="peru">
+									<input class="check__control check__control--box_checkable check__control--type_checkbox" type="checkbox" id="peru" value="peru" disabled>
+									Перу</label>
+							</li>
+						</ul>
+					</fieldset>
+				</div>
+				<div class="form__buttons">
 					<button class="button" type="submit">Применить фильтр</button>
 					<button class="button button--reset" type="reset">Сбросить фильтр</button>
 				</div>

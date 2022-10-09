@@ -1,0 +1,60 @@
+.check {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.check__control {
+	appearance: none;
+	font: inherit;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.check__control--box_checkable {
+	transition: 120ms all ease-in-out;
+
+	&::before {
+		content: "";
+		width: 42px;
+		height: 24px;
+		aspect-ratio: 1;
+		transition: 120ms background ease-in-out;
+		background: url("../../icons/stack.svg#toggle");
+	}
+
+	&:checked {
+		&::before {
+			background: url("../../icons/stack.svg#toggle-checked");
+		}
+	}
+
+	&:disabled {
+		opacity: 0.5;
+	}
+}
+
+
+.check__control--kind_checkable {
+	&::before {
+		content: "";
+		width: 100%;
+		height: 24px;
+		aspect-ratio: 1;
+		transition: 120ms background ease-in-out;
+		background: url("../../icons/stack.svg#radio-checked");
+	}
+
+	&:checked {
+		&::before {
+			background: url("../../icons/stack.svg#radio");
+		}
+	}
+
+	&:disabled {
+		opacity: 0.5;
+	}
+}
