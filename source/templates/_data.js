@@ -46,6 +46,41 @@ export default {
 			"height": 188,
 			"maxdppx": 2,
 			"viewports": ["mobile"]
-		}
+		},
+		"coffee2": {
+			"ext": "png",
+			"width": 130,
+			"height": 188,
+			"maxdppx": 2,
+			"viewports": ["mobile"]
+		},
+		"coffee3": {
+			"ext": "png",
+			"width": 130,
+			"height": 188,
+			"maxdppx": 2,
+			"viewports": ["mobile"]
+		},
+		"coffee4": {
+			"ext": "png",
+			"width": 130,
+			"height": 188,
+			"maxdppx": 2,
+			"viewports": ["mobile"]
+		},
+		"coffee5": {
+			"ext": "png",
+			"width": 130,
+			"height": 188,
+			"maxdppx": 2,
+			"viewports": ["mobile"]
+		},
+		"coffee6": {
+			"ext": "png",
+			"width": 130,
+			"height": 188,
+			"maxdppx": 2,
+			"viewports": ["mobile"]
+		},
 	}
 }

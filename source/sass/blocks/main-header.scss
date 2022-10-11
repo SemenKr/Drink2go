@@ -56,7 +56,6 @@
 	}
 }
 
-
 .main-header__toggle {
 	width: 60px;
 	height: 60px;
@@ -67,6 +66,11 @@
 	transition: all 200ms ease-in;
 	margin: 0;
 	padding: 0;
+
+	&:hover {
+		background: var(--accent-color);
+	}
+
 
 	@media #{$not-mobile} {
 		display: none;
@@ -96,6 +100,11 @@
 	justify-self: flex-end;
 	transition: all 200ms ease-in;
 
+	&:hover {
+		background: var(--accent-color);
+	}
+
+
 	@media #{$not-mobile} {
 		display: none;
 	}
@@ -120,8 +129,8 @@
 .main-header--menu_opened .main-header__nav {
 	@media #{$mobile-only} {
 		position: absolute;
-		left: 0;
-		right: 0;
+		left: -20px;
+		right: -20px;
 		top: 100%;
 		z-index: 2;
 	}

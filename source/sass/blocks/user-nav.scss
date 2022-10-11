@@ -19,6 +19,16 @@
 	color: var(--text-color);
 	padding: 20px;
 	box-sizing: border-box;
+	border-radius: 4px;
+
+	&:hover {
+		color: var(--accent-color);
+	}
+
+	&:active {
+		background-color: var(--accent-bg);
+		color: var(--accent-color);
+	}
 
 	&--icon_user {
 		--icon: url("../../icons/stack.svg#user");
@@ -38,13 +48,23 @@
 			min-width: 50px;
 		}
 
+		@media #{$desktop-only} {
+			&::before:hover {
+				background: var(--accent-color);
+			}
+		}
+
 		&::before {
 			content: "";
 			display: block;
 			min-width: 16px;
 			height: 16px;
-			background: #000000;
+			background: var(--text-color);
 			mask: var(--icon);
+		}
+
+		&::before:hover {
+			background: var(--accent-color);
 		}
 	}
 

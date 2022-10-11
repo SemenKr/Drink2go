@@ -86,7 +86,6 @@
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-pagination"></div>
-				<div class="swiper-scrollbar"></div>
 			</div>
 		</div>
 	</section>
@@ -133,10 +132,8 @@
 						<div class="form__range range">
 							<div class="range__scale">
 								<div class="range__bar" style="left: 0; width: 90%;">
-									<button type="button" class="range__toggle range__toggle--min"><span
-											class="visually-hidden">Переключатель.</span></button>
-									<button type="button" class="range__toggle range__toggle--max"><span
-											class="visually-hidden">Переключатель.</span></button>
+									<button type="button" class="range__toggle range__toggle--min"><span class="visually-hidden">Переключатель.</span></button>
+									<button type="button" class="range__toggle range__toggle--max"><span class="visually-hidden">Переключатель.</span></button>
 								</div>
 							</div>
 						</div>
@@ -154,13 +151,13 @@
 									<input class="check__control check__control--kind_checkable check__control--type_radio" type="radio" name="milk" value="no_matter" id="no_matter" checked>
 									<span>Неважно</span>
 								</label>
-								</li>
+							</li>
 							<li class="form__item">
 								<label class="form__field check check--radio" for="animal">
 									<input class="check__control check__control--kind_checkable check__control--type_radio" type="radio" name="milk" value="animal" id="animal">
 									<span>Только животное</span>
 								</label>
-								</li>
+							</li>
 							<li class="form__item">
 								<label class="form__field check check--radio" for="vegetable">
 									<input class="check__control check__control--kind_checkable check__control--type_radio" type="radio" name="milk" value="vegetable" id="vegetable">
@@ -172,7 +169,7 @@
 									<input class="check__control check__control--kind_checkable check__control--type_radio" type="radio" name="milk" value="milk-free" id="milk-free" disabled>
 									<span>Без молока</span>
 								</label>
-								</li>
+							</li>
 						</ul>
 					</fieldset>
 					<fieldset class="form__fieldset">
@@ -180,7 +177,7 @@
 						<ul class="list">
 							<li class="form__item">
 								<label class="form__field check check--box" for="brasil">
-									<input class="check__control check__control--box_checkable check__control--type_checkbox"  type="checkbox" id="brasil" value="brasil" checked>
+									<input class="check__control check__control--box_checkable check__control--type_checkbox" type="checkbox" id="brasil" value="brasil" checked>
 									<span>Бразилия</span>
 								</label>
 							</li>
@@ -198,7 +195,7 @@
 							</li>
 							<li class="form__item">
 								<label class="form__field check check--box" for="costa-rica">
-									<input class="check__control check__control--box_checkable check__control--type_checkbox"  type="checkbox" id="costa-rica" value="costa-rica">
+									<input class="check__control check__control--box_checkable check__control--type_checkbox" type="checkbox" id="costa-rica" value="costa-rica">
 									<span>Коста-Рика</span>
 								</label>
 							</li>
@@ -232,9 +229,11 @@
 				<ul class="products__list list">
 					<li class="products__item">
 						<div class="catalog-card">
-							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
+							<h3 class="catalog-card__title"><a href="#">Декаф Флэт Уайт</a></h3>
 							<div class="catalog-card__image ">
-								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+								<a href="#">
+									{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+								</a>
 							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
@@ -246,9 +245,11 @@
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
-							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-														<div class="catalog-card__image ">
-								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							<h3 class="catalog-card__title"><a href="#"></a>Декаф Флэт Уайт</a></h3>
+							<div class="catalog-card__image ">
+								<a href="#">
+									{% include "./templates/picture.twig" with {name: "coffee2", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+								</a>
 							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
@@ -260,9 +261,11 @@
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
-							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-														<div class="catalog-card__image ">
-								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							<h3 class="catalog-card__title"><a href="#">Декаф Флэт Уайт</a></h3>
+							<div class="catalog-card__image ">
+								<a href="#">
+									{% include "./templates/picture.twig" with {name: "coffee3", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+								</a>
 							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
@@ -274,9 +277,11 @@
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
-							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-														<div class="catalog-card__image ">
-								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							<h3 class="catalog-card__title"><a href="#">Декаф Флэт Уайт</a></h3>
+							<div class="catalog-card__image ">
+								<a href="#">
+									{% include "./templates/picture.twig" with {name: "coffee4", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+								</a>
 							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
@@ -288,9 +293,11 @@
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
-							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-														<div class="catalog-card__image ">
-								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							<h3 class="catalog-card__title"><a href="#">Декаф Флэт Уайт</a></h3>
+							<div class="catalog-card__image ">
+								<a href="#">
+									{% include "./templates/picture.twig" with {name: "coffee5", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+								</a>
 							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
@@ -302,9 +309,11 @@
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
-							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-														<div class="catalog-card__image ">
-								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							<h3 class="catalog-card__title"><a href="#">Декаф Флэт Уайт</a></h3>
+							<div class="catalog-card__image ">
+								<a href="#">
+									{% include "./templates/picture.twig" with {name: "coffee6", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+								</a>
 							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>

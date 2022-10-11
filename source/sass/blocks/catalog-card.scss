@@ -5,6 +5,16 @@
 	padding: 40px 20px 20px;
 	transition: all 0.5s ease-out;
 	border-radius: 4px;
+	box-sizing: border-box;
+
+	@media #{$not-mobile} {
+		padding: 50px 30px 30px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 50px 30px 30px;
+		min-width: 317px;
+	}
 
 	&:hover,
 	&:focus {
@@ -17,6 +27,11 @@
 	align-self: center;
 	order: -1;
 	margin-bottom: 24px;
+
+	img {
+		width: 130px;
+		height: 188px;
+	}
 }
 
 .catalog-card__title {
@@ -25,6 +40,11 @@
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 32px;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 
 	@media #{$not-mobile} {
 		font-size: 24px;

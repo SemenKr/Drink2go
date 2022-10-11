@@ -12,6 +12,18 @@
 	align-items: center;
 	gap: 4px;
 	--icon: url("../../icons/stack.svg#logo-academy");
+	text-decoration: none;
+	transition: all 200ms ease-in;
+
+	&:hover {
+		color: var(--accent-color);
+		transition: all 200ms ease-in;
+	}
+
+	&:active {
+		color: var(--focus-color);
+		transition: all 200ms ease-in;
+	}
 
 
 	&::after {

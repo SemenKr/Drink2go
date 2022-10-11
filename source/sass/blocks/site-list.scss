@@ -35,6 +35,15 @@
 	color: inherit;
 	padding: 20px;
 
+	&:hover {
+		color: var(--accent-color);
+	}
+
+	&:active {
+		background-color: var(--accent-bg);
+		color: var(--accent-color);
+	}
+
 	@media #{$not-mobile} {
 		&--current {
 			border-bottom: 2px solid var(--accent-color);

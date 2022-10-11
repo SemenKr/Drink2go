@@ -63,6 +63,8 @@
 	text-align: center;
 	padding: 7px 10px;
 	color: var(--text-color);
+	appearance: textfield;
+
 
 	&::placeholder {
 		color: var(--disabled-color);
@@ -79,6 +81,19 @@
 	&:disabled {
 		border: 2px solid var(--disabled-color);
 	}
+}
+
+.form__range-min::-webkit-outer-spin-button,
+.form__range-min::-webkit-inner-spin-button {
+	appearance: none;
+	margin: 0;
+}
+
+
+.form__range-max::-webkit-outer-spin-button,
+.form__range-max::-webkit-inner-spin-button {
+	appearance: none;
+	margin: 0;
 }
 
 .form__range-input-dash {
