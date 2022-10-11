@@ -228,98 +228,111 @@
 					</ul>
 				</details>
 			</div>
-			<div class="products">
+			<div class="catalog__products products">
 				<ul class="products__list list">
 					<li class="products__item">
 						<div class="catalog-card">
 							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-							<img class="catalog-card__image" src="#" alt="">
+							<div class="catalog-card__image ">
+								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
-							<div class="order-wrapper">
+							<div class="catalog-card__order-container">
 								<span class="catalog-card__price">225₽</span>
-								<button class="catalog-card__button button" type="button">В корзину</button>
+								<button class="catalog-card__button button button--basket" type="button">В корзину</button>
 							</div>
 						</div>
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
 							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-							<img class="catalog-card__image" src="#" alt="">
+														<div class="catalog-card__image ">
+								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
-							<div class="order-wrapper">
+							<div class="catalog-card__order-container">
 								<span class="catalog-card__price">225₽</span>
-								<button class="catalog-card__button button" type="button">В корзину</button>
+								<button class="catalog-card__button button button--basket" type="button">В корзину</button>
 							</div>
 						</div>
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
 							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-							<img class="catalog-card__image" src="#" alt="">
+														<div class="catalog-card__image ">
+								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
-							<div class="order-wrapper">
+							<div class="catalog-card__order-container">
 								<span class="catalog-card__price">225₽</span>
-								<button class="catalog-card__button button" type="button">В корзину</button>
+								<button class="catalog-card__button button button--basket" type="button">В корзину</button>
 							</div>
 						</div>
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
 							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-							<img class="catalog-card__image" src="#" alt="">
+														<div class="catalog-card__image ">
+								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
-							<div class="order-wrapper">
+							<div class="catalog-card__order-container">
 								<span class="catalog-card__price">225₽</span>
-								<button class="catalog-card__button button" type="button">В корзину</button>
+								<button class="catalog-card__button button button--basket" type="button">В корзину</button>
 							</div>
 						</div>
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
 							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-							<img class="catalog-card__image" src="#" alt="">
+														<div class="catalog-card__image ">
+								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
-							<div class="order-wrapper">
+							<div class="catalog-card__order-container">
 								<span class="catalog-card__price">225₽</span>
-								<button class="catalog-card__button button" type="button">В корзину</button>
+								<button class="catalog-card__button button button--basket" type="button">В корзину</button>
 							</div>
 						</div>
 					</li>
 					<li class="products__item">
 						<div class="catalog-card">
 							<h3 class="catalog-card__title">Декаф Флэт Уайт</h3>
-							<img class="catalog-card__image" src="#" alt="">
+														<div class="catalog-card__image ">
+								{% include "./templates/picture.twig" with {name: "coffee1", class: "image-content", alt: "Декаф Флэт Уайт"} %}
+							</div>
 							<p class="catalog-card__description">Кофе без кофеина из Эфиопии
 								с натуральным фермерским молоком</p>
-							<div class="order-wrapper">
+							<div class="catalog-card__order-container">
 								<span class="catalog-card__price">225₽</span>
-								<button class="catalog-card__button button" type="button">В корзину</button>
+								<button class="catalog-card__button button button--basket" type="button">В корзину</button>
 							</div>
 						</div>
 					</li>
+
 				</ul>
 			</div>
-			<div>
-				<ul class="pagination list">
-					<li class="pagination-item">
-						<a class="pagination-link pagination-prev" href="#"></a>
+			<div class="catalog__pagination pagination">
+				<ul class="pagination__list list">
+					<li class="pagination__item">
+						<a class="pagination__link pagination__link--prev" href="#"><span>Назад</span></a>
 					</li>
-					<li class="pagination-item">
-						<a class="pagination-link" href="#">1</a>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">1</a>
 					</li>
-					<li class="pagination-item">
-						<a class="pagination-link pagination-current" href="#">2</a>
+					<li class="pagination__item pagination__item--current">
+						<a class="pagination__link" href="#">2</a>
 					</li>
-					<li class="pagination-item">
-						<a class="pagination-link" href="#">3</a>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">3</a>
 					</li>
-					<li class="pagination-item">
-						<a class="pagination-link pagination-next" href="#"></a>
+					<li class="pagination__item">
+						<a class="pagination__link pagination__link--next" href="#"><span>Вперёд</span></a>
 					</li>
 				</ul>
 			</div>
@@ -327,7 +340,7 @@
 	</section>
 	<section class="location">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<div class="location__map" id="map">map</div>
+		<div class="location__map" id="map"></div>
 	</section>
 </main>
 {% endblock %}

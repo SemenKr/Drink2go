@@ -1,0 +1,35 @@
+.copyright {
+	padding: 20px 20px 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.copyright__link {
+	font-size: 12px;
+	line-height: 16px;
+	color: var(--disabled-color);
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	--icon: url("../../icons/stack.svg#logo-academy");
+
+
+	&::after {
+		content: "";
+		mask: var(--icon);
+		width: 13px;
+		height: 16px;
+		background-color: var(--disabled-color);
+		margin-right: 6px;
+	}
+
+	&:hover::after {
+		background: var(--accent-color);
+		transition: all 200ms ease-in;
+	}
+
+	&:active::after {
+		background: var(--focus-color);
+		transition: all 200ms ease-in;
+	}
+}

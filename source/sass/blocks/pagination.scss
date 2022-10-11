@@ -1,0 +1,103 @@
+.pagination__list {
+	display: flex;
+	gap: 20px;
+	border-radius: 4px;
+
+	@media #{$not-mobile} {
+		gap: 0;
+		justify-content: flex-end;
+		margin-right: -20px;
+	}
+}
+
+.pagination__item {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	transition: all 0.5s ease-out;
+	background-color: var(--base-color);
+	height: 40px;
+
+	&:hover,
+	&:focus-within {
+		background-color: var(--accent-bg);
+	}
+
+	@media#{$not-mobile} {
+		&:last-child,
+		&:first-child {
+			padding-right: 45px;
+			padding-left: 45px;
+		}
+	}
+
+	&--current {
+		background-color: var(--main-color);
+		color: var(--text-color);
+
+		@media#{$not-mobile} {
+			padding: 0 20px;
+		}
+	}
+}
+
+.pagination__item--current .pagination__link {
+	color: var(--text-color);
+	font-weight: 600;
+}
+
+.pagination__link {
+	position: relative;
+	text-decoration: none;
+	color: var(--accent-color);
+	padding: 4px 12px;
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	min-width: 40px;
+
+
+	@media #{$mobile-only} {
+		span {
+			display: none;
+		}
+
+		&--prev {
+			&::before {
+				content: "";
+				display: block;
+				width: 10px;
+				height: 10px;
+				background: url("data:image/svg+xml,%3Csvg width='6' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.8 0 6 1.2 2.4 5 6 8.8 4.8 10 0 5l4.8-5Z' fill='%237859CF'/%3E%3C/svg%3E");
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&--next {
+			&::before {
+				content: "";
+				display: block;
+				width: 10px;
+				height: 10px;
+				background: url("data:image/svg+xml,%3Csvg width='6' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.8 0 6 1.2 2.4 5 6 8.8 4.8 10 0 5l4.8-5Z' fill='%237859CF'/%3E%3C/svg%3E");
+				background-position: center;
+				background-repeat: no-repeat;
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	@media#{$not-mobile} {
+		span {
+			background-color: inherit;
+		}
+	}
+}
+
+.pagination__item--current .pagination__link--prev,
+.pagination__item--current .pagination__link--next {
+	visibility: hidden;
+}

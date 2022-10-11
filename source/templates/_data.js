@@ -39,6 +39,13 @@ export default {
 			"height": 280,
 			"maxdppx": 2,
 			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"coffee1": {
+			"ext": "png",
+			"width": 130,
+			"height": 188,
+			"maxdppx": 2,
+			"viewports": ["mobile"]
 		}
 	}
 }

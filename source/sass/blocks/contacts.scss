@@ -1,0 +1,50 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$mobile-only} {
+		padding: 20px 20px;
+		border-bottom: 1px solid #f0ebff;
+	}
+}
+
+.contacts__title {
+	margin-bottom: 20px;
+}
+
+.contacts__address {
+	font-size: 14px;
+	line-height: 20px;
+	display: flex;
+	align-items: flex-start;
+	--icon: url("../../icons/stack.svg#address");
+	margin-bottom: 16px;
+
+	&::before {
+		content: "";
+		mask: var(--icon);
+		width: 13px;
+		height: 16px;
+		background-color: var(--accent-color);
+		margin-right: 6px;
+	}
+}
+
+.contacts__tel {
+	text-decoration: none;
+	color: inherit;
+	font-size: 14px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	--icon: url("../../icons/stack.svg#phone");
+
+	&::before {
+		content: "";
+		mask: var(--icon);
+		width: 13px;
+		height: 16px;
+		background-color: var(--accent-color);
+		margin-right: 6px;
+	}
+}

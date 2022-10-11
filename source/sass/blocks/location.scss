@@ -1,0 +1,11 @@
+.location__map {
+	height: 420px;
+
+	@media #{$not-mobile} {
+		height: 480px;
+	}
+
+	@media #{$desktop-only} {
+		height: 540px;
+	}
+}

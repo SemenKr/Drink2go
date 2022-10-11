@@ -36,4 +36,11 @@
 		line-height: 24px;
 		font-weight: 600;
 	}
+
+	&--footer {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 20px;
+		color: var(--accent-color);
+	}
 }
