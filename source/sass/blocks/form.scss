@@ -2,6 +2,23 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 20px 0 36px;
+
+
+	@media #{$not-mobile} {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.form__fieldsets-wrapper {
+	font-size: 16px;
+	line-height: 24px;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+	}
 }
 
 .form__fieldset {
@@ -71,4 +88,10 @@
 	flex-direction: column;
 	gap: 24.5px;
 	padding: 0 60px;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		justify-content: center;
+		gap: 29.5px;
+	}
 }

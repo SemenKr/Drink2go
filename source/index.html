@@ -125,6 +125,7 @@
 	<section class="catalog">
 		<div class="catalog__container page__centerer">
 			<h2 class="catalog__title title title--accent">Каталог</h2>
+			<h2 class="catalog__title title title--level-1">Каталог кофейных напитков</h2>
 			<form class="catalog__form form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="form__fieldsets-wrapper">
 					<fieldset class="form__fieldset">
@@ -215,14 +216,15 @@
 					<button class="button button--form button--reset" type="reset">Сбросить фильтр</button>
 				</div>
 			</form>
-			<div>
-				<span>Сортировка:</span>
-				<details>
-					<summary>по умолчанию</summary>
-					<ul class="list">
-						<li class="">по умолчанию</li>
-						<li class="">по рейтингу</li>
-						<li class="">по дате</li>
+			<div class="catalog__sort-container">
+				<span class="title title--form">Сортировка:</span>
+				<details class="catalog__sort">
+					<summary class="catalog__sort-title">по умолчанию</summary>
+					<ul class="catalog__sort-list list">
+						<li class="catalog__sort-item catalog__sort-item--current">по умолчанию</li>
+						<li class="catalog__sort-item">сначала дорогие</li>
+						<li class="catalog__sort-item">сначала дешёвые</li>
+						<li class="catalog__sort-item">высокий рейтинг</li>
 					</ul>
 				</details>
 			</div>
