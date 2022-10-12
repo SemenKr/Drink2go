@@ -40,7 +40,7 @@ const map = L.map('map')
 		lat: 59.968194195792805,
 		lng: 30.316492,
 	},
-		15,);
+		20,);
 
 L.tileLayer(
 	'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -51,8 +51,8 @@ L.tileLayer(
 
 const mainPinIcon = L.icon({
 	iconUrl: './icons/stack.svg#map-marker',
-	iconSize: [38, 50],
-	iconAnchor: [15, 30],
+	iconSize: [100, 90],
+	iconAnchor: [50, 20],
 });
 
 const marker = L.marker(
