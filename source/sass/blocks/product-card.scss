@@ -88,6 +88,7 @@
 
 	@media #{$desktop-only} {
 		text-align: start;
+		margin-bottom: 45px;
 	}
 }
 
@@ -116,10 +117,10 @@
 }
 
 .product-card__button {
-	margin-left: 40px;
+	margin-left: 25px;
 
 	@media #{$not-mobile} {
-		margin-left: 20px;
+		margin-left: 25px;
 	}
 }
 
@@ -130,6 +131,7 @@
 	@media #{$desktop-only} {
 		flex-direction: row;
 		align-items: center;
+		padding-left: 100px;
 	}
 }
 

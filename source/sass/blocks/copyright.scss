@@ -2,6 +2,10 @@
 	padding: 20px 20px 30px;
 	display: flex;
 	justify-content: center;
+
+	@media #{$not-mobile} {
+		padding: 30px 20px 30px;
+	}
 }
 
 .copyright__link {

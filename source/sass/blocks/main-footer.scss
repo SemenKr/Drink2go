@@ -12,14 +12,15 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: auto auto;
+		padding: 40px 20px;
+		column-gap: 60px;
 	}
 
 	@media #{$desktop-only} {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto auto;
-		padding-top: 40px;
-		padding-bottom: 10px;
+		padding: 60px 35px;
 	}
 }
 
@@ -46,6 +47,7 @@
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 20px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -63,6 +65,7 @@
 		grid-column-end: -1;
 		grid-row-start: 1;
 		grid-row-end: 2;
+		margin-bottom: 30px;
 	}
 
 	@media #{$desktop-only} {
