@@ -66,3 +66,14 @@ const marker = L.marker(
 );
 
 marker.addTo(map);
+
+// убирает реакцию карты на прокрутку
+
+map.on('click', function() {
+if (!map.scrollWheelZoom.enabled()) {
+map.scrollWheelZoom.enable();
+}
+});
+map.on('mouseout', function() {
+map.scrollWheelZoom.disable();
+});
