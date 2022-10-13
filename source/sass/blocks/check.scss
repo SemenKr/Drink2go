@@ -29,8 +29,8 @@
 
 	&:hover,
 	&:focus-within {
-		outline: 3px solid var(--focus-color);
-		outline-offset: -3px;
+		outline: 2px solid var(--focus-color);
+		outline-offset: 3px;
 	}
 
 	&:checked {
@@ -71,7 +71,7 @@
 	&:hover,
 	&:focus {
 		outline: 2px solid var(--focus-color);
-		outline-offset: -2px;
+		outline-offset: 2px;
 	}
 
 	&:checked {
